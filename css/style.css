@@ -1,0 +1,308 @@
+html {
+    font-size: 16px;
+    font-family: apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Helvetica Neue', Arial, sans-serif;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+    font-size: 1rem;
+}
+
+/**************** Estilos Generalaes (mobile first)****************** */
+
+#main {
+    background-color: rgb(7, 75, 153);
+    text-align: justify;
+}
+
+#title {
+    font-size: 1.5em;
+}
+
+#img-caption {
+    font-size: 0.8em;
+}
+
+#tribute-info {
+    background-color: rgb(252, 255, 253);
+    margin: auto;
+    padding: 0 0.7rem 0 0.7rem;
+    width: 80%;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    border-style: dotted;
+    border-color: rgb(7, 75, 153);
+}
+
+#img-div, h1, p {
+    text-align: center;
+    color: #FFF;
+}
+
+#img-div {
+    display: flex;
+    -webkit-display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
+}
+
+#image {
+    border: 4px solid blue;
+    border-radius: 5px;
+    box-shadow: 2px 4px 19px #00f2ff;
+    width: 90%;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+}
+
+#img-caption {
+    padding: 20px;
+    width: 80%;
+}
+
+a {
+    color: rgb(7, 75, 153);
+    font-size: inherit;
+}
+
+a:hover {
+    color: rgb(175, 22, 206);
+    font-style: italic;
+}
+
+figcaption {
+    padding: 0.5rem;
+}
+
+h1 {
+    font-size: 4rem;
+}
+
+h2 {
+    margin-bottom: 0.5rem;
+    font-size: 1rem;
+    text-align: left;
+    margin-top: .2rem;
+}
+
+/* Estas tres propiedades hacen a  un medio flexible */
+
+img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+p {
+    font-style: oblique;
+    font-size: 2.5rem;
+    padding-bottom: 1.5rem;
+}
+
+em {
+    font-size: 1rem;
+}
+
+strong {
+    font-size: 1rem;
+}
+
+.todonada {
+    padding: 0;
+    margin-top: 2rem;
+    font-size: 1.8rem;
+    font-family: sans-serif;
+    font-style: normal;
+}
+
+.fecha {
+    font-size: 1.5rem;
+    padding-bottom: 1.3rem;
+}
+
+.raices, .television, .queeseso, .llamado, .recaida, .religiosa, .partida {
+    text-align: center;
+}
+
+.raices__irlanda {
+    width: 60%;
+}
+
+.television__adolecente, .queeseso__eucaristia, .llamado__jesus, .recaida__irlanda, .religiosa__consagrada, .partida__cielo {
+    width: 80%;
+}
+
+.raices__origen, .television__testimonio, .queeseso__testimonio, .llamado__testimonio, .recaida__testimonio, .religiosa__testimonio, .partida__testimonio {
+    font-size: 1rem;
+    text-indent: 25px;
+    margin-bottom: 1.5rem;
+    text-align: justify;
+    margin-bottom: 1rem;
+}
+
+.enlace {
+    width: 70%;
+    margin-top: 2rem;
+    /*  Esta una forma de centrar Horizontalament un elemento */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.enlace__texto {
+    color: rgb(7, 75, 153);
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.enlace__titulo {
+    color: darkcyan;
+}
+
+.enlace__ul {
+    margin-bottom: 2rem;
+    position: relative;
+}
+
+.enlace__link {
+    font-size: .8rem;
+}
+
+.enlace__item1, .enlace__item2 {
+    width: 90%;
+    height: 50%;
+    margin-bottom: 1rem;
+    /*margin-left: auto;
+    margin-right: auto */
+    margin-left: 1rem;
+    list-style: none;
+    padding-top: .5rem;
+    
+}
+
+.enlace__item1::before {
+    content: " ";
+    display: block;
+    width: 6rem;
+    height: 2rem;
+    border-radius: 15px;
+    background-image: url(/img/sitioweb.JPG);
+    background-position: bottom;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+.enlace__item2::before {
+    content: " ";
+    display: block;
+    width: 4rem;
+    height: 2rem;
+    border-radius: 10px;
+    background-image: url(/img/todo2.jpg);
+    background-position: bottom;
+    background-size: auto;
+    background-repeat: no-repeat;
+    
+}
+
+@media (min-width: 20em) {
+    .enlace__item1::before {
+        width: 8rem;
+        height: 4rem;
+    }
+    .enlace__item1 {
+        width: 80%;
+        margin-bottom: 0.5rem;
+    }
+}
+
+@media (min-width: 37.5em)  {
+    #tribute-info {
+        padding: 0;
+        margin-top: 1rem;
+    }
+    #title {
+        font-size: 4em;
+    }
+    #img-caption {
+        font-size: 1em;
+    }
+    h2 {
+        margin-top: 0;
+        margin-bottom: 0.5rem;
+        font-size: 1.1rem;
+    }
+    strong {
+        font-size: 1rem;
+    }
+    em {
+        font-size: 1rem;
+    }
+    .todonada {
+        font-size: 4rem;
+    }
+    .fecha {
+        font-size: 2rem;
+    }
+    .raices, .television, .queeseso, .llamado, .recaida, .religiosa, .partida {
+        width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        clear: left;
+    }
+    .raices {
+        margin-top: 4rem;
+    }
+    .raices__irlanda, .television__adolecente, .queeseso__eucaristia, .llamado__jesus, .recaida__irlanda, .religiosa__consagrada, .partida__cielo {
+        width: 20%;
+        float: left;
+        padding-right: 1rem;
+    }
+    .television {
+        margin-top: 2rem;
+    }
+    .raices__origen, .television__testimonio, .queeseso__testimonio, .llamado__testimonio, .recaida__testimonio, .religiosa__testimonio, .partida__testimonio {
+        font-size: 1rem;
+        text-align: justify;
+        margin-bottom: 0;
+    }
+    .queeseso {
+        margin-top: 2rem;
+    }
+    .llamado {
+        margin-top: 2rem;
+    }
+    .recaida {
+        margin-top: 2rem;
+    }
+    .religiosa {
+        margin-top: 2rem;
+    }
+    .partida {
+        margin-top: 2rem;
+    }
+    .enlace__link {
+        font-size: 1rem;
+    }
+    .enlace__item1 {
+        margin-bottom: 2rem;
+    }
+    .enlace__item1::before {
+        width: 5rem;
+        height: 1rem;
+        padding: 0;
+    }
+}
+
+/* @media (min-width: 48em) {}
+
+@media (min-width: 65em) {}
+
+@media (min-width: 75em) {} */
